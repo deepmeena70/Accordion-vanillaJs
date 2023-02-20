@@ -26,7 +26,9 @@ body {
 }
 
 .show {
-  display: block !important;
+  padding-top: 0.8rem !important;
+  padding-bottom: 0.8rem !important;
+  height: 100px !important;
 }
 
 .rotate {
@@ -41,7 +43,14 @@ body {
 }
 
 .container {
-  margin-top: 25vh;
+  margin: 5rem 0 5rem 0;
+}
+
+.text {
+  font-size: 3.4rem;
+  color: white;
+  text-transform: capitalize;
+  margin-bottom: 0.8rem;
 }
 
 .accordion-container {
@@ -67,11 +76,12 @@ body {
   background: linear-gradient(45deg, rgb(157, 34, 197) 0%, rgb(45, 238, 253) 100%);
 }
 .accordion-container p {
-  padding: 0.8rem 1rem 0.8rem 1rem;
+  padding: 0 1rem 0 1rem;
   color: white;
-  display: none;
+  height: 0;
   font-size: 1.2rem;
   transition: all ease 0.5s;
+  overflow: hidden;
 }
 
 .expand-btn {
@@ -84,11 +94,4 @@ body {
   width: 20px;
   height: 2px;
   transition: all ease 0.1s;
-}
-
-.text {
-  font-size: 4.4rem;
-  color: white;
-  text-transform: capitalize;
-  margin-top: 8.4rem;
 }/*# sourceMappingURL=style.css.map */
