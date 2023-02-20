@@ -1,0 +1,111 @@
+// colors
+$primary: rgba(157, 34, 197, 1);
+$secondary: rgba(45, 238, 253, 1);
+$dark-purple: #6d169b;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: $primary;
+  background: linear-gradient(
+    45deg,
+    $primary 48%,
+    $secondary 100%
+  );
+  overflow-x: hidden;
+}
+
+.flex {
+  display: flex;
+}
+
+.f-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.f-column {
+  flex-direction: column;
+}
+
+.show {
+  display: block !important;
+}
+
+.rotate {
+  transform: rotate(90deg);
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  margin-top: 25vh;
+}
+
+.accordion-container {
+  margin-top: 1rem;
+  width: 50%;
+  box-shadow: 0 0 10px $dark-purple;
+  button {
+    width: 100%;
+    background: white;
+    border: none;
+    font-size: 1.8rem;
+    text-align: left;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+  }
+  .accordion {
+    position: relative;
+    background: $primary;
+    background: linear-gradient(
+      45deg,
+      $primary 48%,
+      $secondary 100%
+    );
+    color: white;
+    &:hover{
+        background: linear-gradient(
+            45deg,
+            $primary 0%,
+            $secondary 100%
+          );
+    }
+  }
+  p {
+    padding: 0.8rem 1rem 0.8rem 1rem;
+    color:white;
+    display: none;
+    font-size: 1.2rem;
+    transition: all ease 0.5s;
+  }
+}
+
+.expand-btn {
+  left: 94%;
+  .line-1,
+  .line-2 {
+    background: white;
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    transition: all ease 0.1s;
+  }
+}
+
+.text{
+    font-size: 4.4rem;
+    color: white;
+    text-transform: capitalize;
+    margin-top: 8.4rem;
+}
